@@ -93,9 +93,13 @@ window.addEventListener('load', function(){
     alert('Loading...Loading...Loading.....Loaded :) ');
 });
 
-// Copy P tag #10 //
+// Dbl Click Page #10 //
 
+const body= document.querySelector('body');
 
+body.addEventListener('dblclick', function(event){
+    event.target.style.backgroundColor= 'black';
+})
 
 // Prevent Default //
 
@@ -106,3 +110,4 @@ anchors.forEach(function(links){
         event.preventDefault();
     })
 })
+
